@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>spotore</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      padding-top: 50px;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: #ffffff;
+    }
+    .navbar-dark .navbar-toggler-icon {
+      background-color: #ffffff;
+    }
+    .container {
+      max-width: 800px;
+    }
+    .review-card {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">レビューアプリ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">商品一覧</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">レビュー投稿</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <h2 class="mt-4 mb-4">商品名</h2>
+
+  <!-- レビューカード -->
+  <div class="card review-card">
+    <div class="card-body">
+      <h5 class="card-title">ユーザー名</h5>
+      <p class="card-text">レビュー内容がここに入ります。商品に対する感想や評価を書いてください。</p>
+      <p class="card-text"><small class="text-muted">評価: ★★★★☆</small></p>
+    </div>
+  </div>
+  <!-- /レビューカード -->
+
+  <!-- レビューフォーム -->
+  <h3 class="mt-4 mb-4">レビューを投稿する</h3>
+  <form>
+    <div class="form-group">
+      <label for="userName">ユーザー名</label>
+      <input type="text" class="form-control" id="userName" placeholder="ユーザー名を入力してください">
+    </div>
+    <div class="form-group">
+      <label for="reviewContent">レビュー内容</label>
+      <textarea class="form-control" id="reviewContent" rows="3" placeholder="商品に対するレビューを入力してください"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="rating">評価</label>
+      <select class="form-control" id="rating">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">投稿する</button>
+  </form>
+  <!-- /レビューフォーム -->
+
+</div>
+<h1>Videos</h1>
+
+
+
+
+
+
+
+
+<!-- Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
