@@ -56,5 +56,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 5.1.1'
 gem 'image_processing', '~> 1.12'
+gem 'carrierwave', '~> 2.0'
+gem 'mini_magick'
 
 

@@ -10,10 +10,14 @@ class VideosController < ApplicationController
   def create
     @video = Video.new(video_params)
     if @video.save
-      redirect_to @video, notice: 'Video was successfully uploaded.'
+      redirect_to @video
     else
       render :new
     end
+  end
+
+  def show
+    @video = Video.find(params[:id])
   end
 
   private

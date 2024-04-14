@@ -1,0 +1,12 @@
+# index.html.erb
+<% @videos.each do |video| %>
+  <div>
+    <%= link_to video.title, video %>
+    <%= video.video.thumb.url %>
+  </div>
+<% end %>
+
+# show.html.erb
+<h1><%= @video.title %></h1>
+<p><%= @video.description %></p>
+<video src="<%= @video.video.url %>" controls></video>
