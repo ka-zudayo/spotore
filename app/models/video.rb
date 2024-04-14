@@ -1,3 +1,3 @@
 class Video < ApplicationRecord
-  has_one_attached :video_file
+  mount_uploader :video, VideoUploader
 end
